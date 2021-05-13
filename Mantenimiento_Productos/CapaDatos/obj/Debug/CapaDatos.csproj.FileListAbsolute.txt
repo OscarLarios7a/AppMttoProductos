@@ -1,0 +1,7 @@
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaDatos\bin\Debug\CapaDatos.dll
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaDatos\bin\Debug\CapaEntidades.dll
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaDatos\bin\Debug\CapaEntidades.pdb
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaDatos\obj\Debug\CapaDatos.dll
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaDatos\obj\Debug\CapaDatos.pdb

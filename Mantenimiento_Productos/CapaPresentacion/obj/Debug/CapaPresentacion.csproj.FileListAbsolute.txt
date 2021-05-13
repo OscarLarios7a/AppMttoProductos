@@ -1,0 +1,17 @@
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\obj\Debug\CapaPresentacion.frmCategoria.resources
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\bin\Debug\Bunifu_UI_v1.52.dll
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\bin\Debug\CapaEntidades.dll
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\bin\Debug\CapaNegocio.dll
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\bin\Debug\CapaDatos.dll
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\bin\Debug\CapaEntidades.pdb
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\bin\Debug\CapaDatos.pdb
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\bin\Debug\Guna.UI.dll

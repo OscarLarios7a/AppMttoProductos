@@ -26,7 +26,7 @@ namespace CapaDatos
 
             LeerFilas = sqlcmd.ExecuteReader();
 
-            List<E_Categoria> Listar = new List<E_Categoria>;
+            List<E_Categoria> Listar = new List<E_Categoria>();
             while (LeerFilas.Read())
             {
                 Listar.Add(new E_Categoria

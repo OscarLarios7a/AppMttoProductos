@@ -1,0 +1,5 @@
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaEntidades\bin\Debug\CapaEntidades.dll
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaEntidades\bin\Debug\CapaEntidades.pdb
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaEntidades\obj\Debug\CapaEntidades.csprojResolveAssemblyReference.cache
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaEntidades\obj\Debug\CapaEntidades.dll
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaEntidades\obj\Debug\CapaEntidades.pdb

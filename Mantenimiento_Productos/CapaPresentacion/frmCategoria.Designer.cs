@@ -89,6 +89,7 @@ namespace CapaPresentacion
             this.pnlBarraTop.Name = "pnlBarraTop";
             this.pnlBarraTop.Size = new System.Drawing.Size(870, 38);
             this.pnlBarraTop.TabIndex = 0;
+            this.pnlBarraTop.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBarraTop_Paint);
             // 
             // label1
             // 
@@ -100,6 +101,7 @@ namespace CapaPresentacion
             this.label1.Size = new System.Drawing.Size(110, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "CATEGORIA";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pctCerrar
             // 
@@ -123,6 +125,7 @@ namespace CapaPresentacion
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // moverFormulario
             // 
@@ -140,6 +143,7 @@ namespace CapaPresentacion
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
@@ -150,6 +154,7 @@ namespace CapaPresentacion
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // txtBuscar
             // 
@@ -299,6 +304,7 @@ namespace CapaPresentacion
             this.btnExcel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnExcel.Textcolor = System.Drawing.Color.White;
             this.btnExcel.TextFont = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
             // 
             // btnImprimir
             // 
@@ -333,6 +339,7 @@ namespace CapaPresentacion
             this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnImprimir.Textcolor = System.Drawing.Color.White;
             this.btnImprimir.TextFont = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // btnEditar
             // 
@@ -396,6 +403,7 @@ namespace CapaPresentacion
             this.dtgCategoria.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgCategoria.Size = new System.Drawing.Size(489, 267);
             this.dtgCategoria.TabIndex = 13;
+            this.dtgCategoria.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgCategoria_CellContentClick);
             // 
             // label2
             // 
@@ -407,6 +415,7 @@ namespace CapaPresentacion
             this.label2.Size = new System.Drawing.Size(60, 21);
             this.label2.TabIndex = 14;
             this.label2.Text = "Codigo";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -418,6 +427,7 @@ namespace CapaPresentacion
             this.label3.Size = new System.Drawing.Size(68, 21);
             this.label3.TabIndex = 15;
             this.label3.Text = "Nombre";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -429,6 +439,7 @@ namespace CapaPresentacion
             this.label4.Size = new System.Drawing.Size(91, 21);
             this.label4.TabIndex = 16;
             this.label4.Text = "Descripcion";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtCodigo
             // 
@@ -438,6 +449,7 @@ namespace CapaPresentacion
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(223, 29);
             this.txtCodigo.TabIndex = 18;
+            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
             // pictureBox4
             // 
@@ -448,6 +460,7 @@ namespace CapaPresentacion
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 17;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // label5
             // 
@@ -459,6 +472,7 @@ namespace CapaPresentacion
             this.label5.Size = new System.Drawing.Size(60, 21);
             this.label5.TabIndex = 19;
             this.label5.Text = "Codigo";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // txtNombre
             // 
@@ -468,6 +482,7 @@ namespace CapaPresentacion
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(223, 29);
             this.txtNombre.TabIndex = 22;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // pictureBox5
             // 
@@ -478,6 +493,7 @@ namespace CapaPresentacion
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 21;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // label6
             // 
@@ -489,6 +505,7 @@ namespace CapaPresentacion
             this.label6.Size = new System.Drawing.Size(68, 21);
             this.label6.TabIndex = 20;
             this.label6.Text = "Nombre";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -500,6 +517,7 @@ namespace CapaPresentacion
             this.label7.Size = new System.Drawing.Size(91, 21);
             this.label7.TabIndex = 23;
             this.label7.Text = "Descripcion";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // txtdescripcion
             // 
@@ -510,6 +528,7 @@ namespace CapaPresentacion
             this.txtdescripcion.Name = "txtdescripcion";
             this.txtdescripcion.Size = new System.Drawing.Size(303, 86);
             this.txtdescripcion.TabIndex = 25;
+            this.txtdescripcion.TextChanged += new System.EventHandler(this.txtdescripcion_TextChanged);
             // 
             // pictureBox6
             // 
@@ -520,6 +539,7 @@ namespace CapaPresentacion
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 24;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // RadiusElipse
             // 
@@ -543,6 +563,7 @@ namespace CapaPresentacion
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(519, 456);
             this.panel1.TabIndex = 26;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
@@ -553,6 +574,7 @@ namespace CapaPresentacion
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(870, 456);
             this.panel2.TabIndex = 27;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel3
             // 
@@ -573,6 +595,7 @@ namespace CapaPresentacion
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(352, 456);
             this.panel3.TabIndex = 27;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // frmCategoria
             // 

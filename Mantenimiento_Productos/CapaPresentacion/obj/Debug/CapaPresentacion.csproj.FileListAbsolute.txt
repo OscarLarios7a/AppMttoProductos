@@ -16,3 +16,4 @@ D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mante
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\bin\Debug\Guna.UI.dll
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\obj\Debug\CapaPresentacion.frmMarca.resources
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\obj\Debug\CapaPresentacion.frmNotificacion.resources

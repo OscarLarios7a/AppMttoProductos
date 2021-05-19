@@ -12,14 +12,27 @@ namespace CapaPresentacion
 {
     public partial class frmNotificacion : Form
     {
-        public frmNotificacion()
+        public frmNotificacion(string mensaje)
         {
             InitializeComponent();
+            lblMensaje.Text = mensaje;
+
         }
 
         private void frmNotificacion_Load(object sender, EventArgs e)
         {
             frmfadeTransition.ShowAsyc(this);
+        }
+
+        //
+        public static void confirmacionForm(string mensaje)
+        {
+            frmNotificacion frm = new frmNotificacion(mensaje);
+            frm.ShowDialog();
+        }
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

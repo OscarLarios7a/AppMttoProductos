@@ -114,7 +114,8 @@ namespace CapaPresentacion
 
                     objNegocio.insertandoMarca(objEntidad);
 
-                    MessageBox.Show("Se guardaron correctamente los Datos");
+                    //MessageBox.Show("Se guardaron correctamente los Datos");
+                    frmNotificacion.confirmacionForm("GUARDADO");
                     mostrarBuscarTabla("");
                     limpiarCajas();
 
@@ -135,7 +136,7 @@ namespace CapaPresentacion
 
                     objNegocio.editandoMarca(objEntidad);
 
-                    MessageBox.Show("Se Edito correctamente los Datos");
+                    frmNotificacion.confirmacionForm("EDITADO");
                     mostrarBuscarTabla("");
                     limpiarCajas();
                     edicion = false;

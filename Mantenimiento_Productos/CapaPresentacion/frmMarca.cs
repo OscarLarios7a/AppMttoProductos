@@ -88,19 +88,40 @@ namespace CapaPresentacion
 
         private void btnEliminarMarca_Click(object sender, EventArgs e)
         {
-            if (dtgMarca.SelectedRows.Count > 0)
+            try
+            {
+                DialogResult resultado = new DialogResult();
+                frmInformacion frm = new frmInformacion("¿estas Seguro de Eliminar el Registro?");
+                resultado=frm.ShowDialog();
+
+                if (resultado == DialogResult.OK)
+                {
+                    objEntidad.IdMarca = Convert.ToInt32(dtgMarca.CurrentRow.Cells[0].Value.ToString());
+                    objNegocio.eliminandoMarca(objEntidad);
+
+                    frmNotificacion.confirmacionForm("Eliminado");
+                    //MessageBox.Show("Se elimino correctamente");
+                    mostrarBuscarTabla("");
+                }
+            }
+            catch (Exception ex)
             {
 
-                objEntidad.IdMarca = Convert.ToInt32(dtgMarca.CurrentRow.Cells[0].Value.ToString());
-                objNegocio.eliminandoMarca(objEntidad);
+                MessageBox.Show("Seleccione la fila a eliminar"+ex);
+            }
+            //if (dtgMarca.SelectedRows.Count > 0)
+            //{
 
-                MessageBox.Show("Se elimino correctamente");
-                mostrarBuscarTabla("");
-            }
-            else
-            {
-                MessageBox.Show("Seleccione la fila a eliminar");
-            }
+            //    objEntidad.IdMarca = Convert.ToInt32(dtgMarca.CurrentRow.Cells[0].Value.ToString());
+            //    objNegocio.eliminandoMarca(objEntidad);
+
+            //    MessageBox.Show("Se elimino correctamente");
+            //    mostrarBuscarTabla("");
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Seleccione la fila a eliminar");
+            //}
         }
 
         private void btnGuardarMarca_Click(object sender, EventArgs e)

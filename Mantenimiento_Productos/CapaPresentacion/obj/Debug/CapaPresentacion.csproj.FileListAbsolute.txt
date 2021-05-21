@@ -19,3 +19,5 @@ D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mante
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\obj\Debug\CapaPresentacion.frmNotificacion.resources
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\obj\Debug\CapaPresentacion.frmInformacion.resources
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\obj\Debug\CapaPresentacion.frmPrincipal.resources
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml

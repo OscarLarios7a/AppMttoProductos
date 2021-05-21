@@ -192,6 +192,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmInformacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmInformacion";
             this.Load += new System.EventHandler(this.frmInformacion_Load);
             this.panel1.ResumeLayout(false);

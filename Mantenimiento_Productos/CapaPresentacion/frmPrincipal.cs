@@ -60,6 +60,14 @@ namespace CapaPresentacion
         {
             pctFlecha.Top = sender.Top;
         }
+        //metodo para activar un Formhijo en el pnlWrapper del formulario Principal
+        private Form frmActivo = null;
+        private void abrirFormpnlWrapper(Form frmHijo)
+        {
+            if (frmActivo != null)
+                frmActivo.Close();
+            frmActivo
+        }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {

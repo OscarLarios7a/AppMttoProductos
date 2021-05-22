@@ -66,7 +66,13 @@ namespace CapaPresentacion
         {
             if (frmActivo != null)
                 frmActivo.Close();
-            frmActivo
+            frmActivo = frmHijo;
+            frmHijo.TopLevel = false;
+            frmHijo.Dock = DockStyle.Fill;
+            pnlWrapper.Controls.Add(frmHijo);
+            pnlWrapper.Tag = frmHijo;
+            frmHijo.BringToFront();
+            frmHijo.Show();
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
@@ -80,12 +86,14 @@ namespace CapaPresentacion
         {
             seleccionBoton((Bunifu.Framework.UI.BunifuFlatButton)sender);
             seguirBoton((Bunifu.Framework.UI.BunifuFlatButton)sender);
+            abrirFormpnlWrapper(new frmDashboard());
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
             seleccionBoton((Bunifu.Framework.UI.BunifuFlatButton)sender);
             seguirBoton((Bunifu.Framework.UI.BunifuFlatButton)sender);
+            abrirFormpnlWrapper(new frmProductos());
         }
 
         private void btnCompras_Click(object sender, EventArgs e)

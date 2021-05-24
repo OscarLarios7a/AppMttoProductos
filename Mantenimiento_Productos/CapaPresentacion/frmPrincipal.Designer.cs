@@ -454,10 +454,10 @@
             // pnlWrapper
             // 
             this.pnlWrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(243)))), ((int)(((byte)(239)))));
-            this.pnlWrapper.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlWrapper.Location = new System.Drawing.Point(270, 0);
+            this.pnlWrapper.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlWrapper.Location = new System.Drawing.Point(270, 49);
             this.pnlWrapper.Name = "pnlWrapper";
-            this.pnlWrapper.Size = new System.Drawing.Size(1170, 920);
+            this.pnlWrapper.Size = new System.Drawing.Size(1170, 871);
             this.pnlWrapper.TabIndex = 1;
             // 
             // pnlHeader
@@ -470,7 +470,7 @@
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(270, 0);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(1170, 44);
+            this.pnlHeader.Size = new System.Drawing.Size(1170, 50);
             this.pnlHeader.TabIndex = 2;
             // 
             // label1

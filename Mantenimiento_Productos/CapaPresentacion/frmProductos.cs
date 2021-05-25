@@ -22,12 +22,31 @@ namespace CapaPresentacion
         {
             InitializeComponent();
             mostrarTablaProductos();//iniciamos en el constructor la carga del metodo de listado de productos
-
+            ocultarmMoverAncharColumnas();
         }
 
+
+        //Creaciones de Metodos
+        //metodo para mostras los datos de la DB "Mantenimiento_Productos -> Productos"
         public void mostrarTablaProductos()
         {
             dtgProductos.DataSource = objNProductos.listandoProductos();
+        }
+        //metodo para ocutar o mostrar columnas del dtgProductos
+        public void ocultarmMoverAncharColumnas()
+        {
+            dtgProductos.Columns[2].Visible = false;
+            dtgProductos.Columns[5].Visible = false;
+            dtgProductos.Columns[7].Visible = false;
+
+            dtgProductos.Columns[0].Width = 50;
+            dtgProductos.Columns[1].Width = 50;
+            dtgProductos.Columns[3].Width = 90;
+            dtgProductos.Columns[4].Width = 200;
+
+            dtgProductos.Columns[0].DisplayIndex=11;
+            dtgProductos.Columns[1].DisplayIndex = 11;
+
         }
         
     }

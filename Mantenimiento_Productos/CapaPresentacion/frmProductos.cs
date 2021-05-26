@@ -49,8 +49,8 @@ namespace CapaPresentacion
             dtgProductos.Columns[3].Width = 90;
             dtgProductos.Columns[4].Width = 200;
 
-            dtgProductos.Columns[0].DisplayIndex=10;
-            dtgProductos.Columns[1].DisplayIndex =10;
+            dtgProductos.Columns[0].DisplayIndex=11;
+            dtgProductos.Columns[1].DisplayIndex =11;
 
         }
 

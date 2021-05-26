@@ -18,6 +18,7 @@ namespace CapaEntidades
         private int stockProducto;
         private int idCategoria;
         private int idMarca;
+        private string buscarProducto;
 
         public int IdProducto
         {
@@ -120,6 +121,19 @@ namespace CapaEntidades
             set
             {
                 idMarca = value;
+            }
+        }
+
+        public string BuscarProducto
+        {
+            get
+            {
+                return buscarProducto;
+            }
+
+            set
+            {
+                buscarProducto = value;
             }
         }
     }

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductos));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -67,7 +67,7 @@
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnNuevoProducto = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.txtBuscarMarca = new System.Windows.Forms.TextBox();
+            this.txtBuscarProducto = new System.Windows.Forms.TextBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.dtgProductos = new System.Windows.Forms.DataGridView();
@@ -447,7 +447,7 @@
             this.panel10.Controls.Add(this.label9);
             this.panel10.Controls.Add(this.dtgProductos);
             this.panel10.Controls.Add(this.pictureBox5);
-            this.panel10.Controls.Add(this.txtBuscarMarca);
+            this.panel10.Controls.Add(this.txtBuscarProducto);
             this.panel10.Controls.Add(this.pictureBox6);
             this.panel10.Controls.Add(this.bunifuThinButton24);
             this.panel10.Controls.Add(this.bunifuThinButton23);
@@ -588,15 +588,17 @@
             this.btnNuevoProducto.Size = new System.Drawing.Size(235, 52);
             this.btnNuevoProducto.TabIndex = 0;
             this.btnNuevoProducto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNuevoProducto.Click += new System.EventHandler(this.btnNuevoProducto_Click);
             // 
-            // txtBuscarMarca
+            // txtBuscarProducto
             // 
-            this.txtBuscarMarca.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBuscarMarca.Font = new System.Drawing.Font("Yu Gothic UI", 15F);
-            this.txtBuscarMarca.Location = new System.Drawing.Point(337, 86);
-            this.txtBuscarMarca.Name = "txtBuscarMarca";
-            this.txtBuscarMarca.Size = new System.Drawing.Size(299, 27);
-            this.txtBuscarMarca.TabIndex = 8;
+            this.txtBuscarProducto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBuscarProducto.Font = new System.Drawing.Font("Yu Gothic UI", 15F);
+            this.txtBuscarProducto.Location = new System.Drawing.Point(337, 86);
+            this.txtBuscarProducto.Name = "txtBuscarProducto";
+            this.txtBuscarProducto.Size = new System.Drawing.Size(299, 27);
+            this.txtBuscarProducto.TabIndex = 8;
+            this.txtBuscarProducto.TextChanged += new System.EventHandler(this.txtBuscarProducto_TextChanged);
             // 
             // pictureBox6
             // 
@@ -633,28 +635,28 @@
             this.dtgProductos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgProductos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgProductos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgProductos.ColumnHeadersVisible = false;
             this.dtgProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Editar,
             this.Eliminar});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(10);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgProductos.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(10);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgProductos.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtgProductos.Location = new System.Drawing.Point(24, 188);
             this.dtgProductos.Name = "dtgProductos";
             this.dtgProductos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -858,7 +860,7 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
-        private System.Windows.Forms.TextBox txtBuscarMarca;
+        private System.Windows.Forms.TextBox txtBuscarProducto;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.DataGridView dtgProductos;

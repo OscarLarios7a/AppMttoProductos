@@ -32,6 +32,11 @@ namespace CapaPresentacion
         {
             dtgProductos.DataSource = objNProductos.listandoProductos();
         }
+        //metodo para buscar Productos 
+        public void buscarProductos(string buscar)
+        {
+            dtgProductos.DataSource = objNProductos.buscarProductos(buscar);
+        }
         //metodo para ocutar o mostrar columnas del dtgProductos
         public void ocultarmMoverAncharColumnas()
         {
@@ -44,10 +49,22 @@ namespace CapaPresentacion
             dtgProductos.Columns[3].Width = 90;
             dtgProductos.Columns[4].Width = 200;
 
-            dtgProductos.Columns[0].DisplayIndex=11;
-            dtgProductos.Columns[1].DisplayIndex = 11;
+            dtgProductos.Columns[0].DisplayIndex=10;
+            dtgProductos.Columns[1].DisplayIndex =10;
 
         }
-        
+
+        private void txtBuscarProducto_TextChanged(object sender, EventArgs e)
+        {
+            buscarProductos(txtBuscarProducto.Text);
+        }
+
+        private void btnNuevoProducto_Click(object sender, EventArgs e)
+        {
+            frmNuevoProducto frm = new frmNuevoProducto();
+            frm.ShowDialog();
+            //frm.Update = false;
+            //mostrarTablaProductos();
+        }
     }
 }

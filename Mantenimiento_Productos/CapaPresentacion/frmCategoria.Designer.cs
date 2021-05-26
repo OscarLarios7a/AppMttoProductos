@@ -444,6 +444,7 @@ namespace CapaPresentacion
             // txtCodigo
             // 
             this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCodigo.Enabled = false;
             this.txtCodigo.Font = new System.Drawing.Font("Yu Gothic UI", 16F);
             this.txtCodigo.Location = new System.Drawing.Point(23, 128);
             this.txtCodigo.Name = "txtCodigo";

@@ -16,7 +16,9 @@ namespace CapaPresentacion
     {
         N_Categoria objNCategoria = new N_Categoria();
         N_Marca objNMarca = new N_Marca();
+        E_Productos objEProductos = new E_Productos();
 
+        public bool Update = false; //Declaro una varibale booleana para la manipulacion de los objetos que tenga mi frmNuevoProducto
         public frmNuevoProducto()
         {
             InitializeComponent();

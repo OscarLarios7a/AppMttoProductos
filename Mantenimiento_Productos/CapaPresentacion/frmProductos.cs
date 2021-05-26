@@ -63,8 +63,40 @@ namespace CapaPresentacion
         {
             frmNuevoProducto frm = new frmNuevoProducto();
             frm.ShowDialog();
-            //frm.Update = false;
-            //mostrarTablaProductos();
+            frm.Update = false;
+            mostrarTablaProductos();
+        }
+
+        private void dtgProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dtgProductos.Rows[e.RowIndex].Cells["Eliminar"].Selected)
+            {
+                Form informacion = new frmInformacion("¿Estas Seguro de Eliminar el Producto?");
+                DialogResult resultado = informacion.ShowDialog();
+
+                if (resultado == DialogResult.OK)
+                {
+                    int eliminar = Convert.ToInt32(dtgProductos.Rows[e.RowIndex].Cells[2].Value.ToString());
+                    objNProductos.eliminarProducto(eliminar);
+                    frmNotificacion.confirmacionForm("Eliminado");
+                    mostrarTablaProductos();
+                }
+            }
+            else if (dtgProductos.Rows[e.RowIndex].Cells["Editar"].Selected)
+            {
+                frmNuevoProducto frm = new frmNuevoProducto();
+                 frm.Update = true;
+                frm.txtCodProducto.Text = dtgProductos.Rows[e.RowIndex].Cells["idProducto"].Value.ToString();
+                frm.txtIdProducto.Text = dtgProductos.Rows[e.RowIndex].Cells["codProducto"].Value.ToString(); 
+                frm.txtNombreProducto.Text = dtgProductos.Rows[e.RowIndex].Cells["producto"].Value.ToString(); ;
+                frm.txtPrecioCompra.Text = dtgProductos.Rows[e.RowIndex].Cells["precio_compra"].Value.ToString();
+                frm.txtPrecioVenta.Text = dtgProductos.Rows[e.RowIndex].Cells["precio_venta"].Value.ToString();
+                frm.txtStock.Text = dtgProductos.Rows[e.RowIndex].Cells["stock"].Value.ToString();
+                frm.cmbCategoria.Text = dtgProductos.Rows[e.RowIndex].Cells["idCategoria"].Value.ToString();
+                frm.cmbMarca.Text = dtgProductos.Rows[e.RowIndex].Cells["idMarca"].Value.ToString();
+
+            }
+        
         }
     }
 }

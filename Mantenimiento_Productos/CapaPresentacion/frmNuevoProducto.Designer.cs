@@ -83,7 +83,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.txtIdProducto);
             this.panel2.Controls.Add(this.pctIdproducto);
             this.panel2.Controls.Add(this.label9);
@@ -112,7 +112,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 38);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(619, 421);
+            this.panel2.Size = new System.Drawing.Size(614, 436);
             this.panel2.TabIndex = 29;
             // 
             // txtIdProducto
@@ -357,7 +357,7 @@
             this.btnGuardar.IconVisible = true;
             this.btnGuardar.IconZoom = 90D;
             this.btnGuardar.IsTab = false;
-            this.btnGuardar.Location = new System.Drawing.Point(33, 370);
+            this.btnGuardar.Location = new System.Drawing.Point(176, 374);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
             this.btnGuardar.OnHovercolor = System.Drawing.Color.Firebrick;
@@ -418,7 +418,7 @@
             this.pnlBarraTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBarraTop.Location = new System.Drawing.Point(0, 0);
             this.pnlBarraTop.Name = "pnlBarraTop";
-            this.pnlBarraTop.Size = new System.Drawing.Size(619, 38);
+            this.pnlBarraTop.Size = new System.Drawing.Size(614, 38);
             this.pnlBarraTop.TabIndex = 28;
             // 
             // label1
@@ -436,7 +436,7 @@
             // 
             this.pctCerrar.Dock = System.Windows.Forms.DockStyle.Right;
             this.pctCerrar.Image = ((System.Drawing.Image)(resources.GetObject("pctCerrar.Image")));
-            this.pctCerrar.Location = new System.Drawing.Point(587, 0);
+            this.pctCerrar.Location = new System.Drawing.Point(582, 0);
             this.pctCerrar.Name = "pctCerrar";
             this.pctCerrar.Size = new System.Drawing.Size(32, 38);
             this.pctCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -459,9 +459,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 471);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(614, 478);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlBarraTop);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmNuevoProducto";
             this.Text = "frmNuevoProducto";
@@ -491,30 +494,30 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pctCerrar;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtCodProducto;
-        private System.Windows.Forms.TextBox txtNombreProducto;
         private System.Windows.Forms.PictureBox pictureBox5;
         private Bunifu.Framework.UI.BunifuFlatButton btnGuardar;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtPrecioVenta;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtPrecioCompra;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtIdProducto;
         private System.Windows.Forms.PictureBox pctIdproducto;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox cmbMarca;
-        private System.Windows.Forms.ComboBox cmbCategoria;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox txtCodProducto;
+        public System.Windows.Forms.TextBox txtNombreProducto;
+        public System.Windows.Forms.TextBox txtPrecioVenta;
+        public System.Windows.Forms.TextBox txtPrecioCompra;
+        public System.Windows.Forms.TextBox txtIdProducto;
+        public System.Windows.Forms.ComboBox cmbMarca;
+        public System.Windows.Forms.ComboBox cmbCategoria;
+        public System.Windows.Forms.TextBox txtStock;
     }
 }

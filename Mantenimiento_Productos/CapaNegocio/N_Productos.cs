@@ -42,5 +42,10 @@ namespace CapaNegocio
               objProducto.eliminarProductos(idProducto);
         }
 
+        public void contabilizarProducto(E_Productos producto)
+        {
+            objProducto.contabilizarProductos(producto);
+        }
+
     }
 }

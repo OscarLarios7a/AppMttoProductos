@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 using CapaNegocio;
 using CapaEntidades;
 
@@ -16,13 +17,14 @@ namespace CapaPresentacion
     public partial class frmProductos : Form
     {
         //instanciamos el objeto de N_Productos
-
         N_Productos objNProductos = new N_Productos();
+        E_Productos objEProductos = new E_Productos();
         public frmProductos()
         {
             InitializeComponent();
             mostrarTablaProductos();//iniciamos en el constructor la carga del metodo de listado de productos
             ocultarmMoverAncharColumnas();
+            contarProductos();
         }
 
 
@@ -54,6 +56,16 @@ namespace CapaPresentacion
 
         }
 
+        //metodo para mostrar los totales de Productos,categorias y marcas
+        public void contarProductos()
+        {
+            objNProductos.contabilizarProducto(objEProductos);
+            lblProductos.Text = objEProductos.TotalProducto;
+            lblCategorias.Text = objEProductos.TotalCategoria;
+            lblMarcas.Text = objEProductos.TotalMarca;
+            lblTotalProductos.Text = objEProductos.SumaProducto;
+        } 
+
         private void txtBuscarProducto_TextChanged(object sender, EventArgs e)
         {
             buscarProductos(txtBuscarProducto.Text);
@@ -65,6 +77,7 @@ namespace CapaPresentacion
             frm.ShowDialog();
             frm.Update = false;
             mostrarTablaProductos();
+            contarProductos();
         }
 
         private void dtgProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -80,6 +93,7 @@ namespace CapaPresentacion
                     objNProductos.eliminarProducto(eliminar);
                     frmNotificacion.confirmacionForm("Eliminado");
                     mostrarTablaProductos();
+                    contarProductos();
                 }
             }
             else if (dtgProductos.Rows[e.RowIndex].Cells["Editar"].Selected)
@@ -97,6 +111,7 @@ namespace CapaPresentacion
 
                 frm.ShowDialog();
                 mostrarTablaProductos();
+                contarProductos();
             }
         
         }
@@ -105,12 +120,38 @@ namespace CapaPresentacion
         {
             frmCategoria frmOpenCategoria = new frmCategoria();
             frmOpenCategoria.ShowDialog();
+            contarProductos();
         }
 
         private void btnOpenMarca_Click(object sender, EventArgs e)
         {
             frmMarca frmOpenMarca = new frmMarca();
             frmOpenMarca.ShowDialog();
+            contarProductos();
+        }
+
+        private void btnImportarExcel_Click(object sender, EventArgs e)
+        {
+            Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
+            Microsoft.Office.Interop.Excel._Workbook libro = app.Workbooks.Add(Type.Missing);
+            Microsoft.Office.Interop.Excel._Worksheet hoja = null;
+            hoja = libro.Sheets[1];
+            //libro. = "Libro_Producto";
+            hoja.Name = "Productos";
+
+            for (int i = 3; i < dtgProductos.Columns.Count + 1; i++)
+            {
+                hoja.Cells[1, i] = dtgProductos.Columns[i - 1].HeaderText;
+            }
+
+            for (int i = 0; i < dtgProductos.Rows.Count; i++)
+            {
+                for (int j = 0; j < dtgProductos.Columns.Count; j++)
+                {
+                    hoja.Cells[i + 2, j + 1] = dtgProductos.Rows[i].Cells[j].Value.ToString();
+                }
+            }
+            app.Visible = true;
         }
     }
 }

@@ -18,7 +18,13 @@ namespace CapaEntidades
         private int stockProducto;
         private int idCategoria;
         private int idMarca;
-        private string buscarProducto;
+        private string buscarProducto; // variable que se utilizara para la busqueda de datos 
+
+        //se crean lsa siguientes variables para la asignacion del resultado a los Labels del frmProducto
+        private string totalCategoria;
+        private string totalMarca;
+        private string totalProducto;
+        private string sumaProducto;
 
         public int IdProducto
         {
@@ -134,6 +140,58 @@ namespace CapaEntidades
             set
             {
                 buscarProducto = value;
+            }
+        }
+
+        public string TotalCategoria
+        {
+            get
+            {
+                return totalCategoria;
+            }
+
+            set
+            {
+                totalCategoria = value;
+            }
+        }
+
+        public string TotalMarca
+        {
+            get
+            {
+                return totalMarca;
+            }
+
+            set
+            {
+                totalMarca = value;
+            }
+        }
+
+        public string TotalProducto
+        {
+            get
+            {
+                return totalProducto;
+            }
+
+            set
+            {
+                totalProducto = value;
+            }
+        }
+
+        public string SumaProducto
+        {
+            get
+            {
+                return sumaProducto;
+            }
+
+            set
+            {
+                sumaProducto = value;
             }
         }
     }

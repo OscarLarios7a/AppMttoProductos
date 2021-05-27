@@ -53,7 +53,7 @@
             this.txtCodProducto = new System.Windows.Forms.TextBox();
             this.txtNombreProducto = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.btnGuardar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnGuardarProducto = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -105,7 +105,7 @@
             this.panel2.Controls.Add(this.txtCodProducto);
             this.panel2.Controls.Add(this.txtNombreProducto);
             this.panel2.Controls.Add(this.pictureBox5);
-            this.panel2.Controls.Add(this.btnGuardar);
+            this.panel2.Controls.Add(this.btnGuardarProducto);
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
@@ -336,39 +336,40 @@
             this.pictureBox5.TabIndex = 32;
             this.pictureBox5.TabStop = false;
             // 
-            // btnGuardar
+            // btnGuardarProducto
             // 
-            this.btnGuardar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
-            this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGuardar.BorderRadius = 7;
-            this.btnGuardar.ButtonText = "Guardar";
-            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardar.DisabledColor = System.Drawing.Color.Gray;
-            this.btnGuardar.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnGuardar.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Iconimage")));
-            this.btnGuardar.Iconimage_right = null;
-            this.btnGuardar.Iconimage_right_Selected = null;
-            this.btnGuardar.Iconimage_Selected = null;
-            this.btnGuardar.IconMarginLeft = 0;
-            this.btnGuardar.IconMarginRight = 0;
-            this.btnGuardar.IconRightVisible = true;
-            this.btnGuardar.IconRightZoom = 0D;
-            this.btnGuardar.IconVisible = true;
-            this.btnGuardar.IconZoom = 90D;
-            this.btnGuardar.IsTab = false;
-            this.btnGuardar.Location = new System.Drawing.Point(176, 374);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
-            this.btnGuardar.OnHovercolor = System.Drawing.Color.Firebrick;
-            this.btnGuardar.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnGuardar.selected = false;
-            this.btnGuardar.Size = new System.Drawing.Size(259, 48);
-            this.btnGuardar.TabIndex = 27;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnGuardar.Textcolor = System.Drawing.Color.White;
-            this.btnGuardar.TextFont = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnGuardarProducto.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnGuardarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
+            this.btnGuardarProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGuardarProducto.BorderRadius = 7;
+            this.btnGuardarProducto.ButtonText = "Guardar";
+            this.btnGuardarProducto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardarProducto.DisabledColor = System.Drawing.Color.Gray;
+            this.btnGuardarProducto.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnGuardarProducto.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnGuardarProducto.Iconimage")));
+            this.btnGuardarProducto.Iconimage_right = null;
+            this.btnGuardarProducto.Iconimage_right_Selected = null;
+            this.btnGuardarProducto.Iconimage_Selected = null;
+            this.btnGuardarProducto.IconMarginLeft = 0;
+            this.btnGuardarProducto.IconMarginRight = 0;
+            this.btnGuardarProducto.IconRightVisible = true;
+            this.btnGuardarProducto.IconRightZoom = 0D;
+            this.btnGuardarProducto.IconVisible = true;
+            this.btnGuardarProducto.IconZoom = 90D;
+            this.btnGuardarProducto.IsTab = false;
+            this.btnGuardarProducto.Location = new System.Drawing.Point(176, 374);
+            this.btnGuardarProducto.Name = "btnGuardarProducto";
+            this.btnGuardarProducto.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(177)))));
+            this.btnGuardarProducto.OnHovercolor = System.Drawing.Color.Firebrick;
+            this.btnGuardarProducto.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnGuardarProducto.selected = false;
+            this.btnGuardarProducto.Size = new System.Drawing.Size(259, 48);
+            this.btnGuardarProducto.TabIndex = 27;
+            this.btnGuardarProducto.Text = "Guardar";
+            this.btnGuardarProducto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnGuardarProducto.Textcolor = System.Drawing.Color.White;
+            this.btnGuardarProducto.TextFont = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnGuardarProducto.Click += new System.EventHandler(this.btnGuardarProducto_Click);
             // 
             // pictureBox4
             // 
@@ -495,7 +496,7 @@
         private System.Windows.Forms.PictureBox pctCerrar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private Bunifu.Framework.UI.BunifuFlatButton btnGuardar;
+        private Bunifu.Framework.UI.BunifuFlatButton btnGuardarProducto;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;

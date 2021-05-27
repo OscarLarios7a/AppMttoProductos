@@ -97,5 +97,39 @@ namespace CapaDatos
             sqlcnx.Close();
 
         }
+
+        //metodo para mostrar los totales de Maca,Categoria y Producto
+        public void contabilizarProductos(E_Productos producto)
+        {
+            SqlCommand cmd = new SqlCommand("ap_sumarProducto", sqlcnx);//hago la conexion con el procedimiento almacenado de mi DB
+            cmd.CommandType = CommandType.StoredProcedure; //ejecuto el procedimienot almacenado
+
+            SqlParameter totalCategorias = new SqlParameter("@totalCategoria", 0);
+            totalCategorias.Direction = ParameterDirection.Output;
+
+            SqlParameter totalMarcas = new SqlParameter("@totalMarca", 0);
+            totalMarcas.Direction = ParameterDirection.Output;
+
+            SqlParameter totalProductos = new SqlParameter("@totalProducto", 0);
+            totalProductos.Direction = ParameterDirection.Output;
+
+            SqlParameter sumaProductos = new SqlParameter("@sumaProducto", 0);
+            sumaProductos.Direction = ParameterDirection.Output;
+
+            cmd.Parameters.Add(totalCategorias);
+            cmd.Parameters.Add(totalMarcas);
+            cmd.Parameters.Add(totalProductos);
+            cmd.Parameters.Add(sumaProductos);
+            sqlcnx.Open();
+            cmd.ExecuteNonQuery();
+
+            producto.TotalCategoria = cmd.Parameters["@totalCategoria"].Value.ToString();
+            producto.TotalMarca = cmd.Parameters["@totalMarca"].Value.ToString();
+            producto.TotalProducto = cmd.Parameters["@totalProducto"].Value.ToString();
+            producto.SumaProducto = cmd.Parameters["@sumaProducto"].Value.ToString();
+
+            sqlcnx.Close();
+
+        }
     }
 }

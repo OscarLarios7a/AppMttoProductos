@@ -29,35 +29,35 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductos));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblProductos = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblCategorias = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblMarcas = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.shapeContainer3 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblTotalProductos = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.shapeContainer4 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
@@ -78,7 +78,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.txtBuscarProducto = new System.Windows.Forms.TextBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnImportarExcel = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnOpenCategoria = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnOpenMarca = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -137,7 +137,7 @@
             // 
             this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.lblProductos);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Controls.Add(this.shapeContainer1);
@@ -146,17 +146,17 @@
             this.panel5.Size = new System.Drawing.Size(310, 116);
             this.panel5.TabIndex = 4;
             // 
-            // label1
+            // lblProductos
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(226, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 50);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "10";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblProductos.BackColor = System.Drawing.Color.Transparent;
+            this.lblProductos.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProductos.ForeColor = System.Drawing.Color.Gray;
+            this.lblProductos.Location = new System.Drawing.Point(226, 15);
+            this.lblProductos.Name = "lblProductos";
+            this.lblProductos.Size = new System.Drawing.Size(62, 50);
+            this.lblProductos.TabIndex = 16;
+            this.lblProductos.Text = "10";
+            this.lblProductos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -214,7 +214,7 @@
             // 
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.lblCategorias);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.shapeContainer2);
@@ -223,17 +223,17 @@
             this.panel3.Size = new System.Drawing.Size(308, 116);
             this.panel3.TabIndex = 4;
             // 
-            // label3
+            // lblCategorias
             // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(226, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 50);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "10";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCategorias.BackColor = System.Drawing.Color.Transparent;
+            this.lblCategorias.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategorias.ForeColor = System.Drawing.Color.Gray;
+            this.lblCategorias.Location = new System.Drawing.Point(226, 15);
+            this.lblCategorias.Name = "lblCategorias";
+            this.lblCategorias.Size = new System.Drawing.Size(62, 50);
+            this.lblCategorias.TabIndex = 16;
+            this.lblCategorias.Text = "10";
+            this.lblCategorias.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
@@ -291,7 +291,7 @@
             // 
             this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel7.Controls.Add(this.label5);
+            this.panel7.Controls.Add(this.lblMarcas);
             this.panel7.Controls.Add(this.label6);
             this.panel7.Controls.Add(this.pictureBox3);
             this.panel7.Controls.Add(this.shapeContainer3);
@@ -300,17 +300,17 @@
             this.panel7.Size = new System.Drawing.Size(308, 116);
             this.panel7.TabIndex = 4;
             // 
-            // label5
+            // lblMarcas
             // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(226, 15);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 50);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "10";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMarcas.BackColor = System.Drawing.Color.Transparent;
+            this.lblMarcas.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarcas.ForeColor = System.Drawing.Color.Gray;
+            this.lblMarcas.Location = new System.Drawing.Point(226, 15);
+            this.lblMarcas.Name = "lblMarcas";
+            this.lblMarcas.Size = new System.Drawing.Size(62, 50);
+            this.lblMarcas.TabIndex = 16;
+            this.lblMarcas.Text = "10";
+            this.lblMarcas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
@@ -368,7 +368,7 @@
             // 
             this.panel9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel9.BackgroundImage")));
             this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel9.Controls.Add(this.label7);
+            this.panel9.Controls.Add(this.lblTotalProductos);
             this.panel9.Controls.Add(this.label8);
             this.panel9.Controls.Add(this.pictureBox4);
             this.panel9.Controls.Add(this.shapeContainer4);
@@ -377,17 +377,17 @@
             this.panel9.Size = new System.Drawing.Size(308, 116);
             this.panel9.TabIndex = 4;
             // 
-            // label7
+            // lblTotalProductos
             // 
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(226, 15);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 50);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "10";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTotalProductos.BackColor = System.Drawing.Color.Transparent;
+            this.lblTotalProductos.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalProductos.ForeColor = System.Drawing.Color.Gray;
+            this.lblTotalProductos.Location = new System.Drawing.Point(226, 15);
+            this.lblTotalProductos.Name = "lblTotalProductos";
+            this.lblTotalProductos.Size = new System.Drawing.Size(62, 50);
+            this.lblTotalProductos.TabIndex = 16;
+            this.lblTotalProductos.Text = "10";
+            this.lblTotalProductos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8
             // 
@@ -450,7 +450,7 @@
             this.panel10.Controls.Add(this.pictureBox5);
             this.panel10.Controls.Add(this.txtBuscarProducto);
             this.panel10.Controls.Add(this.pictureBox6);
-            this.panel10.Controls.Add(this.bunifuThinButton24);
+            this.panel10.Controls.Add(this.btnImportarExcel);
             this.panel10.Controls.Add(this.bunifuThinButton23);
             this.panel10.Controls.Add(this.btnOpenCategoria);
             this.panel10.Controls.Add(this.btnOpenMarca);
@@ -582,39 +582,39 @@
             this.dtgProductos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgProductos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgProductos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dtgProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgProductos.ColumnHeadersVisible = false;
             this.dtgProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Editar,
             this.Eliminar});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(10);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgProductos.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(10);
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgProductos.DefaultCellStyle = dataGridViewCellStyle5;
             this.dtgProductos.Location = new System.Drawing.Point(24, 188);
             this.dtgProductos.Name = "dtgProductos";
             this.dtgProductos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dtgProductos.RowHeadersVisible = false;
             this.dtgProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dtgProductos.Size = new System.Drawing.Size(1252, 454);
@@ -664,31 +664,32 @@
             this.pictureBox6.TabIndex = 7;
             this.pictureBox6.TabStop = false;
             // 
-            // bunifuThinButton24
+            // btnImportarExcel
             // 
-            this.bunifuThinButton24.ActiveBorderThickness = 1;
-            this.bunifuThinButton24.ActiveCornerRadius = 20;
-            this.bunifuThinButton24.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
-            this.bunifuThinButton24.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
-            this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
-            this.bunifuThinButton24.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
-            this.bunifuThinButton24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuThinButton24.ButtonText = "Exp. Excel";
-            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton24.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
-            this.bunifuThinButton24.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.IdleBorderThickness = 5;
-            this.bunifuThinButton24.IdleCornerRadius = 20;
-            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
-            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
-            this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
-            this.bunifuThinButton24.Location = new System.Drawing.Point(1089, 73);
-            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuThinButton24.Name = "bunifuThinButton24";
-            this.bunifuThinButton24.Size = new System.Drawing.Size(187, 52);
-            this.bunifuThinButton24.TabIndex = 5;
-            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnImportarExcel.ActiveBorderThickness = 1;
+            this.btnImportarExcel.ActiveCornerRadius = 20;
+            this.btnImportarExcel.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
+            this.btnImportarExcel.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
+            this.btnImportarExcel.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
+            this.btnImportarExcel.BackColor = System.Drawing.SystemColors.Control;
+            this.btnImportarExcel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnImportarExcel.BackgroundImage")));
+            this.btnImportarExcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnImportarExcel.ButtonText = "Exp. Excel";
+            this.btnImportarExcel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImportarExcel.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
+            this.btnImportarExcel.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnImportarExcel.IdleBorderThickness = 5;
+            this.btnImportarExcel.IdleCornerRadius = 20;
+            this.btnImportarExcel.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
+            this.btnImportarExcel.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
+            this.btnImportarExcel.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
+            this.btnImportarExcel.Location = new System.Drawing.Point(1089, 73);
+            this.btnImportarExcel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnImportarExcel.Name = "btnImportarExcel";
+            this.btnImportarExcel.Size = new System.Drawing.Size(187, 52);
+            this.btnImportarExcel.TabIndex = 5;
+            this.btnImportarExcel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnImportarExcel.Click += new System.EventHandler(this.btnImportarExcel_Click);
             // 
             // bunifuThinButton23
             // 
@@ -842,33 +843,33 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblProductos;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblCategorias;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer2;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblMarcas;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox3;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer3;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblTotalProductos;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox4;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer4;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape4;
         private System.Windows.Forms.Panel panel10;
         private Bunifu.Framework.UI.BunifuThinButton2 btnNuevoProducto;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnImportarExcel;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
         private Bunifu.Framework.UI.BunifuThinButton2 btnOpenCategoria;
         private Bunifu.Framework.UI.BunifuThinButton2 btnOpenMarca;

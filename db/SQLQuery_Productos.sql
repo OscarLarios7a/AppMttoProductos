@@ -96,3 +96,17 @@ create proc sp_EliminarProductos
 as 
 delete productos
 where idProducto=@idProducto
+
+---Procedimiento Almacenado para contar Productos,Categorias, Marcas y sumar Stock de Productos
+
+create proc ap_sumarProducto
+@totalCategoria int output,
+@totalMarca int output,
+@totalProducto int output,
+@sumaProducto int output
+as
+set @totalCategoria = (select count(idCategoria) as Categorias from categoria)
+set @totalMarca= (select count(idMarca) as Marcas from marca)
+set @totalProducto= (select count(idProducto) as Productos from productos)
+set @sumaProducto= (select sum(stock) as Total_Productos from productos)
+go

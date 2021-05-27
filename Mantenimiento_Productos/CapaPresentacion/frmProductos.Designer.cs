@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductos));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -79,8 +80,8 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnOpenCategoria = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnOpenMarca = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnNuevoProducto = new Bunifu.Framework.UI.BunifuThinButton2();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -451,8 +452,8 @@
             this.panel10.Controls.Add(this.pictureBox6);
             this.panel10.Controls.Add(this.bunifuThinButton24);
             this.panel10.Controls.Add(this.bunifuThinButton23);
-            this.panel10.Controls.Add(this.bunifuThinButton22);
-            this.panel10.Controls.Add(this.bunifuThinButton21);
+            this.panel10.Controls.Add(this.btnOpenCategoria);
+            this.panel10.Controls.Add(this.btnOpenMarca);
             this.panel10.Controls.Add(this.btnNuevoProducto);
             this.panel10.Location = new System.Drawing.Point(3, 193);
             this.panel10.Name = "panel10";
@@ -583,7 +584,7 @@
             this.dtgProductos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -596,7 +597,7 @@
             this.Eliminar});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gray;
             dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(10);
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
@@ -606,6 +607,14 @@
             this.dtgProductos.Location = new System.Drawing.Point(24, 188);
             this.dtgProductos.Name = "dtgProductos";
             this.dtgProductos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgProductos.RowHeadersVisible = false;
             this.dtgProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dtgProductos.Size = new System.Drawing.Size(1252, 454);
@@ -707,57 +716,59 @@
             this.bunifuThinButton23.TabIndex = 4;
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // bunifuThinButton22
+            // btnOpenCategoria
             // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(76)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(76)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuThinButton22.ButtonText = "Categorias";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.IdleBorderThickness = 5;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(76)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(76)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton22.Location = new System.Drawing.Point(871, 14);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(187, 52);
-            this.bunifuThinButton22.TabIndex = 3;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnOpenCategoria.ActiveBorderThickness = 1;
+            this.btnOpenCategoria.ActiveCornerRadius = 20;
+            this.btnOpenCategoria.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(76)))), ((int)(((byte)(140)))));
+            this.btnOpenCategoria.ActiveForecolor = System.Drawing.Color.White;
+            this.btnOpenCategoria.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(76)))), ((int)(((byte)(140)))));
+            this.btnOpenCategoria.BackColor = System.Drawing.SystemColors.Control;
+            this.btnOpenCategoria.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOpenCategoria.BackgroundImage")));
+            this.btnOpenCategoria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnOpenCategoria.ButtonText = "Categorias";
+            this.btnOpenCategoria.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOpenCategoria.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
+            this.btnOpenCategoria.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnOpenCategoria.IdleBorderThickness = 5;
+            this.btnOpenCategoria.IdleCornerRadius = 20;
+            this.btnOpenCategoria.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(76)))), ((int)(((byte)(140)))));
+            this.btnOpenCategoria.IdleForecolor = System.Drawing.Color.White;
+            this.btnOpenCategoria.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(76)))), ((int)(((byte)(140)))));
+            this.btnOpenCategoria.Location = new System.Drawing.Point(871, 14);
+            this.btnOpenCategoria.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnOpenCategoria.Name = "btnOpenCategoria";
+            this.btnOpenCategoria.Size = new System.Drawing.Size(187, 52);
+            this.btnOpenCategoria.TabIndex = 3;
+            this.btnOpenCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnOpenCategoria.Click += new System.EventHandler(this.btnOpenCategoria_Click);
             // 
-            // bunifuThinButton21
+            // btnOpenMarca
             // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(76)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(76)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuThinButton21.ButtonText = "Marcas";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 5;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(76)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(76)))), ((int)(((byte)(140)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(1089, 14);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(187, 52);
-            this.bunifuThinButton21.TabIndex = 2;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnOpenMarca.ActiveBorderThickness = 1;
+            this.btnOpenMarca.ActiveCornerRadius = 20;
+            this.btnOpenMarca.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(76)))), ((int)(((byte)(140)))));
+            this.btnOpenMarca.ActiveForecolor = System.Drawing.Color.White;
+            this.btnOpenMarca.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(76)))), ((int)(((byte)(140)))));
+            this.btnOpenMarca.BackColor = System.Drawing.SystemColors.Control;
+            this.btnOpenMarca.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOpenMarca.BackgroundImage")));
+            this.btnOpenMarca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnOpenMarca.ButtonText = "Marcas";
+            this.btnOpenMarca.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOpenMarca.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
+            this.btnOpenMarca.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnOpenMarca.IdleBorderThickness = 5;
+            this.btnOpenMarca.IdleCornerRadius = 20;
+            this.btnOpenMarca.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(76)))), ((int)(((byte)(140)))));
+            this.btnOpenMarca.IdleForecolor = System.Drawing.Color.White;
+            this.btnOpenMarca.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(76)))), ((int)(((byte)(140)))));
+            this.btnOpenMarca.Location = new System.Drawing.Point(1089, 14);
+            this.btnOpenMarca.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnOpenMarca.Name = "btnOpenMarca";
+            this.btnOpenMarca.Size = new System.Drawing.Size(187, 52);
+            this.btnOpenMarca.TabIndex = 2;
+            this.btnOpenMarca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnOpenMarca.Click += new System.EventHandler(this.btnOpenMarca_Click);
             // 
             // btnNuevoProducto
             // 
@@ -859,8 +870,8 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnNuevoProducto;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnOpenCategoria;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnOpenMarca;
         private System.Windows.Forms.TextBox txtBuscarProducto;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;

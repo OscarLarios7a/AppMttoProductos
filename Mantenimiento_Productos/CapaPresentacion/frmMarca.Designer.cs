@@ -117,7 +117,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgMarca.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgMarca.Location = new System.Drawing.Point(11, 125);
+            this.dtgMarca.Location = new System.Drawing.Point(12, 128);
             this.dtgMarca.Name = "dtgMarca";
             this.dtgMarca.ReadOnly = true;
             this.dtgMarca.RowHeadersVisible = false;
@@ -275,7 +275,7 @@
             this.txtdescripcionMarca.Location = new System.Drawing.Point(23, 303);
             this.txtdescripcionMarca.Multiline = true;
             this.txtdescripcionMarca.Name = "txtdescripcionMarca";
-            this.txtdescripcionMarca.Size = new System.Drawing.Size(303, 86);
+            this.txtdescripcionMarca.Size = new System.Drawing.Size(286, 86);
             this.txtdescripcionMarca.TabIndex = 25;
             // 
             // label7
@@ -294,7 +294,7 @@
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(6, 293);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(337, 106);
+            this.pictureBox6.Size = new System.Drawing.Size(320, 106);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 24;
             this.pictureBox6.TabStop = false;
@@ -316,6 +316,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.txtBuscarMarca);
             this.panel1.Controls.Add(this.dtgMarca);
@@ -329,7 +330,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(519, 456);
+            this.panel1.Size = new System.Drawing.Size(518, 456);
             this.panel1.TabIndex = 26;
             // 
             // label2
@@ -388,6 +389,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.txtCodigoMarca);
             this.panel3.Controls.Add(this.txtNombreMarca);
             this.panel3.Controls.Add(this.btnImprimirMarca);
@@ -401,7 +403,7 @@
             this.panel3.Controls.Add(this.pictureBox4);
             this.panel3.Controls.Add(this.pictureBox5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(521, 0);
+            this.panel3.Location = new System.Drawing.Point(516, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(352, 456);
             this.panel3.TabIndex = 27;
@@ -433,7 +435,7 @@
             this.btnImprimirMarca.OnHovercolor = System.Drawing.Color.Firebrick;
             this.btnImprimirMarca.OnHoverTextColor = System.Drawing.Color.White;
             this.btnImprimirMarca.selected = false;
-            this.btnImprimirMarca.Size = new System.Drawing.Size(161, 48);
+            this.btnImprimirMarca.Size = new System.Drawing.Size(153, 48);
             this.btnImprimirMarca.TabIndex = 9;
             this.btnImprimirMarca.Text = "Imprimir";
             this.btnImprimirMarca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -468,7 +470,7 @@
             this.btnGuardarMarca.OnHovercolor = System.Drawing.Color.Firebrick;
             this.btnGuardarMarca.OnHoverTextColor = System.Drawing.Color.White;
             this.btnGuardarMarca.selected = false;
-            this.btnGuardarMarca.Size = new System.Drawing.Size(337, 48);
+            this.btnGuardarMarca.Size = new System.Drawing.Size(320, 48);
             this.btnGuardarMarca.TabIndex = 7;
             this.btnGuardarMarca.Text = "Guardar";
             this.btnGuardarMarca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -503,7 +505,7 @@
             this.btnExcelMarca.OnHovercolor = System.Drawing.Color.Firebrick;
             this.btnExcelMarca.OnHoverTextColor = System.Drawing.Color.White;
             this.btnExcelMarca.selected = false;
-            this.btnExcelMarca.Size = new System.Drawing.Size(161, 48);
+            this.btnExcelMarca.Size = new System.Drawing.Size(144, 48);
             this.btnExcelMarca.TabIndex = 8;
             this.btnExcelMarca.Text = "Excel";
             this.btnExcelMarca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -513,12 +515,13 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 38);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(873, 456);
+            this.panel2.Size = new System.Drawing.Size(868, 456);
             this.panel2.TabIndex = 29;
             // 
             // moverFormulario
@@ -537,7 +540,7 @@
             this.pnlBarraTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBarraTop.Location = new System.Drawing.Point(0, 0);
             this.pnlBarraTop.Name = "pnlBarraTop";
-            this.pnlBarraTop.Size = new System.Drawing.Size(873, 38);
+            this.pnlBarraTop.Size = new System.Drawing.Size(868, 38);
             this.pnlBarraTop.TabIndex = 28;
             // 
             // label1
@@ -555,7 +558,7 @@
             // 
             this.pctCerrar.Dock = System.Windows.Forms.DockStyle.Right;
             this.pctCerrar.Image = ((System.Drawing.Image)(resources.GetObject("pctCerrar.Image")));
-            this.pctCerrar.Location = new System.Drawing.Point(841, 0);
+            this.pctCerrar.Location = new System.Drawing.Point(836, 0);
             this.pctCerrar.Name = "pctCerrar";
             this.pctCerrar.Size = new System.Drawing.Size(32, 38);
             this.pctCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -579,9 +582,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(873, 498);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(868, 507);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlBarraTop);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMarca";
             this.Text = "frmMarca";

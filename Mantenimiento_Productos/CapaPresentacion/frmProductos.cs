@@ -84,10 +84,10 @@ namespace CapaPresentacion
             }
             else if (dtgProductos.Rows[e.RowIndex].Cells["Editar"].Selected)
             {
-                frmNuevoProducto frm = new frmNuevoProducto();
+                frmNuevoProducto frm = new frmNuevoProducto(); 
                  frm.Update = true;
-                frm.txtCodProducto.Text = dtgProductos.Rows[e.RowIndex].Cells["idProducto"].Value.ToString();
-                frm.txtIdProducto.Text = dtgProductos.Rows[e.RowIndex].Cells["codProducto"].Value.ToString(); 
+                frm.txtCodProducto.Text = dtgProductos.Rows[e.RowIndex].Cells["codProducto"].Value.ToString();
+                frm.txtIdProducto.Text = dtgProductos.Rows[e.RowIndex].Cells["idProducto"].Value.ToString(); 
                 frm.txtNombreProducto.Text = dtgProductos.Rows[e.RowIndex].Cells["producto"].Value.ToString(); ;
                 frm.txtPrecioCompra.Text = dtgProductos.Rows[e.RowIndex].Cells["precio_compra"].Value.ToString();
                 frm.txtPrecioVenta.Text = dtgProductos.Rows[e.RowIndex].Cells["precio_venta"].Value.ToString();
@@ -95,8 +95,22 @@ namespace CapaPresentacion
                 frm.cmbCategoria.Text = dtgProductos.Rows[e.RowIndex].Cells["idCategoria"].Value.ToString();
                 frm.cmbMarca.Text = dtgProductos.Rows[e.RowIndex].Cells["idMarca"].Value.ToString();
 
+                frm.ShowDialog();
+                mostrarTablaProductos();
             }
         
+        }
+
+        private void btnOpenCategoria_Click(object sender, EventArgs e)
+        {
+            frmCategoria frmOpenCategoria = new frmCategoria();
+            frmOpenCategoria.ShowDialog();
+        }
+
+        private void btnOpenMarca_Click(object sender, EventArgs e)
+        {
+            frmMarca frmOpenMarca = new frmMarca();
+            frmOpenMarca.ShowDialog();
         }
     }
 }

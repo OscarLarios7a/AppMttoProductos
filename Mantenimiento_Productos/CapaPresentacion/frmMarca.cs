@@ -29,7 +29,8 @@ namespace CapaPresentacion
 
         private void pctCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
+            frmMarca.ActiveForm.Close();
         }
 
         private void frmMarca_Load(object sender, EventArgs e)

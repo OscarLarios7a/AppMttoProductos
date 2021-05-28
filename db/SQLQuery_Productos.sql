@@ -218,7 +218,7 @@ create table detalleVenta(
 
 )
 
-
+/**INICIO DE LA SECCION DE CLIENTES**/
 --Tabla cliente 
 CREATE TABLE cliente (
   idCliente  INT IDENTITY(1,1)PRIMARY KEY NOT NULL,
@@ -226,6 +226,50 @@ CREATE TABLE cliente (
   nombreCliente varchar(35),
   aClientePaterno varchar(35) ,
   aClienteMaterno varchar(35),
-  Telefono varchar(15),
-  Genero varchar(10)
+  telefonoCliente varchar(15),
+  generoCliente varchar(10)
 ) 
+---
+
+--Procedimientos almacenado buscar Cliente---
+CREATE PROC sp_BuscarCliente
+@Buscar nvarchar(20)
+as
+select * from cliente
+where nombreCliente like @Buscar + '%' 
+
+/*Seccion para los procedimientos almacenados de la tabla de Categoria */
+--PROCEDIMIENTO ALMACENADO DE INSERTAR DATOS EN CLIENTE---
+CREATE PROC sp_InsertarCliente
+@NombreCliente nvarchar(35),
+@aClientePaterno varchar(35) ,
+@aClienteMaterno varchar(35),
+@telefonoCliente varchar(15),
+@generoCliente varchar(10)
+as
+insert into cliente values (@NombreCliente,@aClientePaterno,@aClienteMaterno,@telefonoCliente,@generoCliente)
+
+--PROCEDIMIENTO ALMACENADO DE EDITAR DATOS EN Cliente---
+CREATE PROC sp_EditarCliente
+@IdCliente int,
+@NombreCliente nvarchar(35),
+@aClientePaterno varchar(35) ,
+@aClienteMaterno varchar(35),
+@telefonoCliente varchar(15),
+@generoCliente varchar(10)
+as
+UPDATE cliente set nombreCliente=@NombreCliente, 
+aClientePaterno=@aClientePaterno,
+aClienteMaterno=@aClienteMaterno,
+telefonoCliente=@telefonoCliente,
+generoCliente=@generoCliente
+WHERE idCliente=@IdCliente
+
+
+--PROCEDIMIENTO ALMACENADO DE Eliminar DATOS EN CATEGORIA---
+CREATE PROC sp_EliminarCliente
+@IdCliente int
+as
+delete cliente
+where idCliente=@IdCliente
+/**FIN DE SECCION CLIENTES**/

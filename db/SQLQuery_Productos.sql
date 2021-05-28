@@ -1,5 +1,6 @@
 use Mantenimiento_Productos
 
+--Tabla de Productos //
 create table productos(
 idProducto int identity(1,1) primary key not null,
 codProducto as ('PR'+right('00'+convert(varchar,idProducto),(2))),
@@ -110,3 +111,121 @@ set @totalMarca= (select count(idMarca) as Marcas from marca)
 set @totalProducto= (select count(idProducto) as Productos from productos)
 set @sumaProducto= (select sum(stock) as Total_Productos from productos)
 go
+
+
+--crear la tabal de Marca
+create table marca(
+idMarca int identity(1,1)NOT NULL PRIMARY KEY,
+codigo as ('MR'+RIGHT('00'+convert(varchar,idMarca),(2))),
+nombre nvarchar(30) NOT NULL,
+descripcion nvarchar(256) NULL
+);
+--Procedimientos Almacenados de la Tabla de Marca
+create proc sp_BuscarMarca
+@Buscar varchar(30)
+as
+select * from marca 
+where nombre like @Buscar + '%'
+
+create proc sp_InsertarMarca
+@Nombre varchar(30),
+@Descripcion varchar(256)
+as
+insert into marca values(@Nombre,@Descripcion)
+
+create proc sp_EditarMarca
+@IdMarca int,
+@Nombre varchar(30),
+@Descripcion varchar(256)
+as
+update marca set nombre=@Nombre, descripcion=@Descripcion
+where idMarca=@IdMarca
+
+create proc sp_EliminarMarca
+@IdMarca int
+as
+delete marca
+where idMarca=@IdMarca
+
+--Seccion de Categorias --
+--Tabla de Categorias
+create table categoria(
+idCategoria INT IDENTITY(1,1)PRIMARY KEY NOT NULL,
+codigo AS ('CT'+ RIGHT	('00' + convert(VARCHAR,idCategoria),(2))),
+nombre NVARCHAR(30) NOT NULL,
+descripcion NVARCHAR(256) NULL
+)
+
+INSERT INTO categoria VALUES ('HERRAMIENTAS','LAS MEJORES HERRAMIENTAS')
+INSERT INTO categoria VALUES ('PINTURAS','LAS MEJORES PINTURAS PARA TU CASA')
+
+--Procedimientos almacenado buscar categoria---
+CREATE PROC sp_BuscarCategoria
+@Buscar nvarchar(20)
+as
+select * from categoria
+where nombre like @Buscar + '%'
+
+/*Seccion para los procedimientos almacenados de la tabla de Categoria */
+--PROCEDIMIENTO ALMACENADO DE INSERTAR DATOS EN CATEGORIA---
+CREATE PROC sp_InsertarCategoria
+@Nombre nvarchar(30),
+@Descripcion nvarchar(256)
+as
+insert into categoria values (@Nombre,@Descripcion)
+
+--PROCEDIMIENTO ALMACENADO DE EDITAR DATOS EN CATEGORIA---
+CREATE PROC sp_EditarCategoria
+@IdCategoria int,
+@Nombre nvarchar(30),
+@descripcion nvarchar(256)
+as
+UPDATE categoria set nombre=@Nombre, descripcion=@descripcion
+WHERE idCategoria=@IdCategoria
+
+
+--PROCEDIMIENTO ALMACENADO DE Eliminar DATOS EN CATEGORIA---
+CREATE PROC sp_EliminarCategoria
+@IdCategoria int
+as
+delete categoria
+where idCategoria=@IdCategoria
+
+/*Seccion para la tabla de Ventas*/
+--tabla Ventas
+create table ventas(
+idVenta int identity(1,1)primary key not null,
+codigoVenta AS ('VNT'+ RIGHT	('00' + convert(VARCHAR,idVenta),(2))),
+numeroVenta nvarchar(15),
+fecha date,
+estado nvarchar(15),
+idCliente int not null,
+constraint relacionar_cliente foreign key (idCliente) references cliente(idCliente)
+)
+
+--//creacion de la tabla detalle de la venta
+create table detalleVenta(
+	cantidad int,
+	descripcion nvarchar(256),
+	precio decimal(18,2),
+	gravadas decimal(18,2),
+	totales decimal(18,2),
+	idVenta int not null,
+	constraint  relacionar_ventas foreign key(idVenta) references venta(idVenta)
+
+	on update cascade
+	on delete cascade
+
+)
+
+
+--Tabla cliente 
+CREATE TABLE cliente (
+  idCliente  INT IDENTITY(1,1)PRIMARY KEY NOT NULL,
+  codigoCliente AS ('CLT'+ RIGHT	('00' + convert(VARCHAR,idCliente),(2))),
+  nombreCliente varchar(35),
+  aClientePaterno varchar(35) ,
+  aClienteMaterno varchar(35),
+  Telefono varchar(15),
+  Genero varchar(10)
+) 

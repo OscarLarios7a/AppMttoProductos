@@ -231,6 +231,20 @@ CREATE TABLE cliente (
 ) 
 ---
 
+--Procedimiento almacenado de Listar Cliente
+Create proc sp_ListarClientes
+as
+select top 100
+cliente.idCliente,
+cliente.codigoCliente,
+cliente.nombreCliente,
+cliente.aClientePaterno,
+cliente.aClienteMaterno,
+cliente.telefonoCliente,
+cliente.generoCliente 
+from cliente
+order by idCliente asc
+
 --Procedimientos almacenado buscar Cliente---
 CREATE PROC sp_BuscarCliente
 @Buscar nvarchar(20)

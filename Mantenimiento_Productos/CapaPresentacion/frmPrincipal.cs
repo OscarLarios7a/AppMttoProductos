@@ -113,6 +113,7 @@ namespace CapaPresentacion
         {
             seleccionBoton((Bunifu.Framework.UI.BunifuFlatButton)sender);
             seguirBoton((Bunifu.Framework.UI.BunifuFlatButton)sender);
+            abrirFormpnlWrapper(new frmCliente());
         }
 
         private void btnProveedores_Click(object sender, EventArgs e)

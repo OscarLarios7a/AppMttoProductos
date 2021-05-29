@@ -24,3 +24,5 @@ D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mante
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\obj\Debug\CapaPresentacion.frmDashboard.resources
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\obj\Debug\CapaPresentacion.frmProductos.resources
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\obj\Debug\CapaPresentacion.frmNuevoProducto.resources
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\obj\Debug\CapaPresentacion.frmCliente.resources
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\Mantenimiento_Productos\Mantenimiento_Productos\CapaPresentacion\obj\Debug\CapaPresentacion.frmNuevoCliente.resources

@@ -17,6 +17,8 @@ namespace CapaEntidades
         private string telefonoCliente;
         private string generoCliente;
 
+        private string buscarCliente;
+
         // Seccion para el Encapusalamiento de informacion 
         public int IdCliente
         {
@@ -109,6 +111,17 @@ namespace CapaEntidades
             }
         }
 
-        
+        public string BuscarCliente
+        {
+            get
+            {
+                return buscarCliente;
+            }
+
+            set
+            {
+                buscarCliente = value;
+            }
+        }
     }
 }

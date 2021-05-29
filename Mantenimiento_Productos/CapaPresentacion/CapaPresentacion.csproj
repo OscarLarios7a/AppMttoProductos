@@ -66,6 +66,12 @@
     <Compile Include="frmCategoria.Designer.cs">
       <DependentUpon>frmCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCliente.Designer.cs">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,12 @@
     <Compile Include="frmNotificacion.Designer.cs">
       <DependentUpon>frmNotificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNuevoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevoCliente.Designer.cs">
+      <DependentUpon>frmNuevoCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmNuevoProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +125,9 @@
     <EmbeddedResource Include="frmCategoria.resx">
       <DependentUpon>frmCategoria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCliente.resx">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNotificacion.resx">
       <DependentUpon>frmNotificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoCliente.resx">
+      <DependentUpon>frmNuevoCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNuevoProducto.resx">
       <DependentUpon>frmNuevoProducto.cs</DependentUpon>

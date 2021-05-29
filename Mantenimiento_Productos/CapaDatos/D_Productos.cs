@@ -74,7 +74,7 @@ namespace CapaDatos
             cmd.CommandType = CommandType.StoredProcedure; //ejecuto el procedimienot almacenado
             sqlcnx.Open(); //abro la conexion con la DB
 
-            cmd.Parameters.AddWithValue("@@idProducto ", producto.IdProducto);// paso el valor al procedimiento almacenado de mi E_producto de la variable de  producto.NombreProducto
+            cmd.Parameters.AddWithValue("@idProducto ", producto.IdProducto);// paso el valor al procedimiento almacenado de mi E_producto de la variable de  producto.NombreProducto
             cmd.Parameters.AddWithValue("@producto", producto.NombreProducto);// paso el valor al procedimiento almacenado de mi E_producto de la variable de  producto.NombreProducto
             cmd.Parameters.AddWithValue("@precioCompra", producto.PrecioCompra);// paso el valor al procedimiento almacenado de mi E_producto de la variable de producto.PrecioCompra
             cmd.Parameters.AddWithValue("@precioVenta", producto.PrecioVenta);// paso el valor al procedimiento almacenado de mi E_producto de la variable de producto.PrecioVenta

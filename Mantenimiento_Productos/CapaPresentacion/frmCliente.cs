@@ -40,16 +40,21 @@ namespace CapaPresentacion
         public void ocultarmMoverAncharColumnas()
         {
             dtgClientes.Columns[2].Visible = false;
-            dtgClientes.Columns[5].Visible = false;
-            dtgClientes.Columns[7].Visible = false;
+            //dtgClientes.Columns[5].Visible = false;
+            //dtgClientes.Columns[7].Visible = false;
+        
+            dtgClientes.Columns[0].Width = 40;
+            dtgClientes.Columns[1].Width = 40;
+            //dtgClientes.Columns[2].Width = 70;
+            dtgClientes.Columns[3].Width = 70;
+            dtgClientes.Columns[4].Width = 90;
+            dtgClientes.Columns[5].Width = 90;
+            dtgClientes.Columns[6].Width = 90;
+            dtgClientes.Columns[7].Width = 90;
+            dtgClientes.Columns[8].Width = 90;
 
-            dtgClientes.Columns[0].Width = 50;
-            dtgClientes.Columns[1].Width = 50;
-            dtgClientes.Columns[3].Width = 90;
-            dtgClientes.Columns[4].Width = 200;
-
-            dtgClientes.Columns[0].DisplayIndex = 11;
-            dtgClientes.Columns[1].DisplayIndex = 11;
+            dtgClientes.Columns[0].DisplayIndex =8;
+            dtgClientes.Columns[1].DisplayIndex =8;
 
         }
 
@@ -90,7 +95,7 @@ namespace CapaPresentacion
                 if (resultado == DialogResult.OK)
                 {
                     int eliminar = Convert.ToInt32(dtgClientes.Rows[e.RowIndex].Cells[2].Value.ToString());
-                    objNCliente.eliminarCliente(eliminar);
+                    //objNCliente.eliminarCliente();
                     frmNotificacion.confirmacionForm("Eliminado");
                     mostrarTablaClientes();
                     //contarProductos();
